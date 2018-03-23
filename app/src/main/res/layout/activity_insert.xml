@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.student.muhammadrizqi.kontak.InsertActivity"
+    android:id="@+id/activity_insert">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNama"
+        android:text="Nama : "
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNomor"
+        android:text="Nomor : "
+        android:layout_below="@+id/tvNama"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNama"
+        android:layout_toRightOf="@id/tvNama"
+        android:layout_alignBaseline="@id/tvNama"
+        android:hint="Nama"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNomor"
+        android:hint="Nomor"
+        android:layout_toRightOf="@id/tvNomor"
+        android:layout_alignBaseline="@id/tvNomor"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvNomor"
+        android:id="@+id/Linearlayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btInserting"
+            android:text="Isert"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBackGo"
+            android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>
